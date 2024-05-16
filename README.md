@@ -1,66 +1,55 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+## VegieAja - Katalog Sayur untuk Agen Terdaftar
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+**VegieAja** adalah sebuah aplikasi web yang dirancang untuk memudahkan agen terdaftar dalam melakukan pemesanan dan penjualan sayur-sayuran kepada end user. Aplikasi ini berfungsi sebagai katalog sayur yang memungkinkan agen untuk dengan mudah mengakses informasi produk, melakukan pemesanan, dan mengelola transaksi mereka.
 
-## About Laravel
+### Fitur Utama
+- **Landing Page**:
+  - Berfungsi sebagai katalog sayur untuk agen.
+  - Menampilkan produk sayur yang tersedia dengan deskripsi dan harga.
+  - Desain responsif dan user-friendly.
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+- **Admin Panel**:
+  - **Pencatatan Order**: Mengelola dan memantau semua pesanan yang masuk.
+  - **Manajemen Agen**: Menambah, mengedit, dan menghapus data agen terdaftar.
+  - **Manajemen Produk**: Mengelola katalog produk sayur, termasuk penambahan produk baru, pengeditan detail produk, dan penghapusan produk.
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+### Teknologi yang Digunakan
+- **Framework**: Laravel 10.8
+- **Template**: Ogani
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+### Tentang Proyek
+- **VegieAja** merupakan proyek pertama kami dalam membangun solusi digital untuk mempermudah proses bisnis agen sayur.
+- Menggunakan **Laravel 10.8**, framework PHP yang kuat dan fleksibel untuk pengembangan aplikasi web.
+- Desain antarmuka yang modern dan responsif dengan menggunakan template **Ogani**, yang memberikan tampilan profesional dan bersih.
+- Terdapat dua jenis tampilan utama dalam aplikasi ini: **Landing Page** untuk katalog dan **Admin Panel** untuk pengelolaan internal.
 
-## Learning Laravel
+### Persyaratan
+- **PHP**: Versi 8.1 atau yang lebih baru.
+- **Laravel**: Versi 10.8 atau yang lebih baru.
+- **Node.js**: Untuk manajemen paket JavaScript.
+- **Composer**: Untuk manajemen paket PHP.
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+### Cara Menggunakan
+1. **Instalasi**:
+   - Clone repositori ini ke dalam direktori lokal Anda.
+   - Jalankan `composer install` untuk menginstal dependensi Laravel.
+   - Jalankan `npm install` untuk menginstal dependensi JavaScript.
+   - Copy `.env.example` menjadi `.env` dan konfigurasi database Anda.
+   - Buat database baru di phpMyAdmin dan impor file `vegieaja(1).sql` yang terdapat di dalam folder proyek ini.
+   - Sesuaikan pengaturan database di file `.env` Anda dengan informasi database baru yang telah dibuat.
+   - Jalankan `php artisan migrate` untuk migrasi database.
+   - Jalankan `npm run dev` untuk mengkompilasi sumber daya JavaScript.
+   - Jalankan `php artisan serve` untuk memulai aplikasi.
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+2. **Akses**:
+   - Buka `http://localhost:8000` untuk mengakses landing page.
+   - Buka `http://localhost:8000/admin` untuk mengakses admin panel (login diperlukan).
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 2000 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+Kami berharap **VegieAja** dapat membantu agen sayur dalam mengelola pesanan dan meningkatkan efisiensi bisnis mereka. Kami sangat menghargai masukan dan saran Anda untuk pengembangan lebih lanjut.
 
-## Laravel Sponsors
+### Lisensi
+Aplikasi ini dilisensikan di bawah [MIT License](LICENSE).
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+---
 
-### Premium Partners
-
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
-- **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
-- **[Lendio](https://lendio.com)**
-
-## Contributing
-
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Code of Conduct
-
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+Silakan kunjungi repositori ini untuk informasi lebih lanjut dan cara kontribusi. Terima kasih atas dukungannya!
