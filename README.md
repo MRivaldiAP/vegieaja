@@ -18,9 +18,9 @@
 - **Template**: Ogani
 
 ### Tentang Proyek
-- **VegieAja** merupakan proyek pertama kami dalam membangun solusi digital untuk mempermudah proses bisnis agen sayur.
+- **VegieAja** merupakan proyek pertama yang saya kerjakan menggunakan framework laravel.
 - Menggunakan **Laravel 10.8**, framework PHP yang kuat dan fleksibel untuk pengembangan aplikasi web.
-- Desain antarmuka yang modern dan responsif dengan menggunakan template **Ogani**, yang memberikan tampilan profesional dan bersih.
+- Template website menggunakan **Ogani**, yang memberikan memiliki lisensi MIT.
 - Terdapat dua jenis tampilan utama dalam aplikasi ini: **Landing Page** untuk katalog dan **Admin Panel** untuk pengelolaan internal.
 
 ### Persyaratan
@@ -38,7 +38,7 @@
    - Buat database baru di phpMyAdmin dan impor file `vegieaja(1).sql` yang terdapat di dalam folder proyek ini.
    - Sesuaikan pengaturan database di file `.env` Anda dengan informasi database baru yang telah dibuat.
    - Jalankan `php artisan migrate` untuk migrasi database.
-   - Jalankan `npm run dev` untuk mengkompilasi sumber daya JavaScript.
+   - Jalankan `npm run dev` untuk mengkompilasi JavaScript.
    - Jalankan `php artisan serve` untuk memulai aplikasi.
 
 2. **Akses**:
